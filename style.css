@@ -1,0 +1,55 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #24292e; /* GitHub's background color */
+    color: #fafbfc;
+}
+
+h2 {
+    background-color: #24292e; /* GitHub's primary color */
+    color: #ffffff;
+    padding: 10px;
+    margin: 0;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 5px 0 20px 0;
+    box-sizing: border-box;
+}
+
+
+
+textarea {
+    background: #535e6b;
+    width: calc(100% - 20px);
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+/* Optional: Add some styling to the form container */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #353a42;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.main {
+    background: #191c20;
+    width: 40rem;
+    padding:1rem;
+    margin-top: 10rem;
+    margin-inline: auto;
+}
