@@ -33,3 +33,9 @@ function extractRepoName(githubLink) {
         return githubLink;
     }
 }
+
+function copyToClipboard() {
+    const readmeResult = document.getElementById('readmeResult');
+    readmeResult.select();
+    document.execCommand('copy');
+}

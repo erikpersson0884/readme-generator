@@ -53,3 +53,25 @@ form {
     margin-top: 10rem;
     margin-inline: auto;
 }
+
+
+/* Add this CSS to your existing stylesheet */
+button {
+    background-color: #28a745; /* GitHub's green color */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838; /* Slightly darker green on hover */
+}
+
+/* Center the button horizontally */
+button {
+    display: block;
+    margin: 20px auto;
+}
