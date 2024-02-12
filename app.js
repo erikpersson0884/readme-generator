@@ -5,8 +5,8 @@ function generateReadme() {
     const repoName = extractRepoName(githubLink);
 
     const readmeTemplate = `
-# README.md TEMPLATE
-## A template for what ${repoName} repos README.md file should look like
+# ${repoName}
+## ${repoName} is a repository for ...
 
 ![Github version](https://img.shields.io/badge/version-0.0.0-darkblue?style=flat-square)
 ![GitHub repo size](https://img.shields.io/github/repo-size/${repoName}?color=blue&style=flat-square)
