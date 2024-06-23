@@ -12,8 +12,42 @@
 <body>
     <div class="main">
         <h2>README.md Generator</h2>
+
         <label for="githubLink">GitHub Repository Link:</label>
         <input type="text" id="githubLink" placeholder="Enter GitHub link...">
+
+        <ul class="inputDiv">
+            <li>
+                <input type="checkbox" id="includeTitle">
+                <label for="includeTitle">Include Title</label>
+            </li>
+
+            <li id="descriptionOption">
+                <input type="checkbox" id="includeDescription">
+                <label for="includeDescription">Include Description</label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="includeVersion">
+                <label for="includeVersion">Include Repository Version</label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="includeRepoSize">
+                <label for="includeRepoSize">Include Repository Size</label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="includeLastCommit">
+                <label for="includeLastCommit">Include Last Commit</label>
+            </li>
+
+            <li>
+                <input type="checkbox" id="includeLicense">
+                <label for="includeLicense">Include License</label>
+            </li>
+        </ul>
+
         <textarea id="readmeResult" readonly></textarea>
         <button id="copyButton" onclick="copyToClipboard()">Copy to Clipboard</button>
     </div>

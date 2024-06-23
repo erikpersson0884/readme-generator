@@ -1,3 +1,9 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background-color: #24292e; /* GitHub's background color */
     color: #fafbfc;
@@ -6,7 +12,8 @@ body {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 2rem;
 
     height: 100vh;
     padding: 0;
@@ -20,15 +27,9 @@ h2 {
     margin: 0;
 }
 
-label {
-    display: block;
-    margin: 10px 0;
-}
-
 input {
     width: calc(100% - 20px);
     padding: 8px;
-    margin: 5px 0 20px 0;
     box-sizing: border-box;
 }
 
@@ -44,20 +45,17 @@ textarea {
 }
 
 /* Optional: Add some styling to the form container */
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #353a42;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 
 .main {
     background: #191c20;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
     width: 40rem;
     padding:1rem;
-    margin-top: 7.5rem;
     margin-inline: auto;
 }
 
@@ -98,4 +96,35 @@ footer a {
 
 footer a:hover {
     color: #34ba8e;
+}
+
+
+
+.inputDiv {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.inputDiv>li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.inputDiv * {
+    width: max-content;
+}
+
+.inputDiv #descriptionOption {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
 }
