@@ -79,13 +79,14 @@ h2 {
 .main {
     background: var(--glassColor);
     
-    width: 50%;
-    padding: 3rem;
-
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
+    gap: 5rem;
+
+    width:max-content;
+    padding: 3rem;
+
 }
 
 .right, .left {
@@ -93,8 +94,6 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     gap: 2rem;
-
-    width: 90%;
 }
 
 
@@ -112,10 +111,10 @@ h2 {
     color: var(--textColor);
 
     outline: .1rem solid var(--contrastColor);
-
 }
 
 textarea {
+    min-width: 20rem;
     width: 100%;
     height: 80%;
     font-family: "Kode mono";
@@ -179,3 +178,17 @@ textarea {
 }
 
 
+
+
+@media screen and (max-width:700px) {
+    .main {
+        flex-direction: column;
+        margin: 2rem;
+
+        transition: all .5s ease;
+    }
+
+    textarea {
+        height: 50vh;
+    }
+}

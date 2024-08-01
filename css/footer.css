@@ -5,11 +5,21 @@ footer {
     position: absolute;
     bottom: 0;
 
+    margin-top: auto;
+
     padding: .5rem;
     margin-inline: auto;
     margin-bottom: 1rem;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.283);
+
 }
 
 footer a {
-    color: #1faeca
+    color: #212aa5;
+}
+
+@media screen and (max-width: 700px) {
+    footer {
+        position: relative;
+    }
 }

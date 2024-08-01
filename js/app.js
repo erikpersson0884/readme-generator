@@ -67,8 +67,8 @@ function generateReadme() {
 
 
 
-    const githubLink = document.getElementById('githubLink').value.trim();
-    const repoInfo = extractRepoInfo(githubLink);
+    const githubLinkInput = document.getElementById('githubLinkInput').value.trim();
+    const repoInfo = extractRepoInfo(githubLinkInput);
 
     if (!repoInfo) {
         document.getElementById('readmeResult').value = "Invalid GitHub link";
@@ -98,7 +98,7 @@ function copyToClipboard() {
 
 
 document.getElementById('clearButton').addEventListener('click', () => {
-    document.getElementById('githubLink').value = ''; 
+    document.getElementById('githubLinkInput').value = ''; 
     generateReadme(); 
     document.getElementById('readmeResult').value = '';
 });
