@@ -1,0 +1,15 @@
+footer {
+    background: #ffffff18;
+    color: #000;
+
+    position: absolute;
+    bottom: 0;
+
+    padding: .5rem;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #1faeca
+}

@@ -1,55 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>README.md Generator</title>
 
-    <link rel="stylesheet" href="style.css"></link>
+    <meta charset="UTF-8">
+    <meta name="description" content="A webpage to create README.md files for github">
+    <meta name="keywords" content="README, README.md, GitHub, Generator">
+    <meta name="author" content="Erik Persson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="css/style.css"></link>
+    <link rel="stylesheet" href="css/footer.css"></link>
+
+    <script src="js/app.js" defer></script>
 </head>
 <body>
     <div class="main">
-        <h2>README.md Generator</h2>
+        <div class="left">
+            <h2>README.md Generator</h2>
 
-        <label for="githubLink">GitHub Repository Link:</label>
-        <input type="text" id="githubLink" placeholder="Enter GitHub link...">
+            <div>
+                <label class="hidden" for="githubLink">GitHub Repository Link:</label>
+                <input type="text" id="githubLink" placeholder="Enter GitHub link...">
+            </div>
 
-        <ul class="inputDiv">
-            <li>
-                <input type="checkbox" id="includeTitle">
-                <label for="includeTitle">Include Title</label>
-            </li>
 
-            <li id="descriptionOption">
-                <input type="checkbox" id="includeDescription">
-                <label for="includeDescription">Include Description</label>
-            </li>
+            <ul class="optionsList noUlFormatting">
+                <li>
+                    <input type="checkbox" id="includeTitle">
+                    <label for="includeTitle">Include Title</label>
+                </li>
+    
+                <li id="descriptionOption" class="indentedList">
+                    <input type="checkbox" id="includeDescription">
+                    <label for="includeDescription">Include Description</label>
+                </li>
+    
+                <li>
+                    <input type="checkbox" id="includeVersion">
+                    <label for="includeVersion">Include Repository Version</label>
+                </li>
+    
+                <li>
+                    <input type="checkbox" id="includeRepoSize">
+                    <label for="includeRepoSize">Include Repository Size</label>
+                </li>
+    
+                <li>
+                    <input type="checkbox" id="includeLastCommit">
+                    <label for="includeLastCommit">Include Last Commit</label>
+                </li>
+    
+                <li>
+                    <input type="checkbox" id="includeLicense">
+                    <label for="includeLicense">Include License</label>
+                </li>
 
-            <li>
-                <input type="checkbox" id="includeVersion">
-                <label for="includeVersion">Include Repository Version</label>
-            </li>
+                <li>
+                    <ul id="licencesList" class="indentedList noUlFormatting">
 
-            <li>
-                <input type="checkbox" id="includeRepoSize">
-                <label for="includeRepoSize">Include Repository Size</label>
-            </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-            <li>
-                <input type="checkbox" id="includeLastCommit">
-                <label for="includeLastCommit">Include Last Commit</label>
-            </li>
+        <div class="right">
+            <textarea id="readmeResult" readonly></textarea>
+            <div class="buttonsDiv">
+                <button id="clearButton" class="noButtonFormatting">Generate README.md</button>
+                <button id="copyButton" class="noButtonFormatting" onclick="copyToClipboard()">Copy to Clipboard</button>
+            </div>
+        </div>
 
-            <li>
-                <input type="checkbox" id="includeLicense">
-                <label for="includeLicense">Include License</label>
-            </li>
-        </ul>
-
-        <textarea id="readmeResult" readonly></textarea>
-        <button id="copyButton" onclick="copyToClipboard()">Copy to Clipboard</button>
     </div>
 
     <footer>
