@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+:root {
+    --glassColor: #000;
+    --textColor: #fff;
+    --darkTextColor: #000;
+    --contrastColor: #fff;
+    --contrastColor2: #008000;
+    --textAreaBackground: #3d3d3d;
+}
+
 * {
     width: max-content;
     margin: 0;
@@ -21,6 +36,10 @@
     cursor: pointer;
 }
 
+.noInputFormatting {
+    border: none;
+}
+
 .hidden {
     display: none;
 }
@@ -39,9 +58,10 @@
 
 body {
     background: url("../images/snow.jpg") no-repeat center center fixed;
-    color: #fff;
+    color: var(--textColor);
 
     font-size: 18px;
+    font-family: 'Nunito', 'Rubik';
 
     display: flex;
     flex-direction: column;
@@ -52,11 +72,14 @@ body {
     min-height: 100vh;
 }
 
+h2 {
+    font-family: 'Julius Sans one';
+}
+
 .main {
-    background: #000000c5;
+    background: var(--glassColor);
     
-    width: 80%;
-    height: 100%;
+    width: 50%;
     padding: 3rem;
 
     display: flex;
@@ -65,28 +88,50 @@ body {
     
 }
 
-.main>div {
+.right, .left {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 2rem;
 
     width: 90%;
 }
 
+
+/* ----- Left Box ----- */
+
 .indentedList {
     margin-left: 2rem;
 }
 
-input, textarea {
-    background: #3d3d3d;
-    color: #fff;
+
+/* ----- Input and Textarea ----- */
+
+#githubLinkInput, textarea {
+    background: var(--textAreaBackground);
+    color: var(--textColor);
+
+    outline: .1rem solid var(--contrastColor);
+
 }
 
 textarea {
     width: 100%;
     height: 80%;
+    font-family: "Kode mono";
+    border: none;
 }
 
+.githubLinkInputDiv {
+    width: 16.3rem;
+}
+
+#githubLinkInput {
+    width: 100%;
+    padding: .5rem;
+}
+
+/* ----- Right bottom Buttons ----- */
 
 .buttonsDiv {
     display: flex;
@@ -97,7 +142,7 @@ textarea {
     width: 100%;
 }
 .buttonsDiv>button {
-    color: #fff;
+    color: var(--contrastColor);
 
     font-size: 1rem;
 
@@ -105,27 +150,32 @@ textarea {
     padding: .4rem;
 
     transition: all .3s ease; 
+}
 
+.buttonsDiv>button::after {
+    background: var(--contrastColor2);
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: width .5s ease;
+}
+
+.buttonsDiv>button:hover::after {
+    width: 100%;
 }
 
 .buttonsDiv>button:hover {
     transform: scale(1.05);
 }
 
-.buttonsDiv>button:active {
-    background: rgb(189, 194, 192);
-}
-
-
 #copyButton {
-    background: green;
-    color: #000;
-
+    background: var(--contrastColor);
+    color: var(--darkTextColor);
 }
 
 #clearButton {
-
-    outline: .1rem solid green;
+    outline: 1px solid var(--contrastColor);
 }
 
 

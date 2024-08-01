@@ -1,4 +1,4 @@
-document.getElementById("githubLink").addEventListener("input", generateReadme);
+document.getElementById("githubLinkInput").addEventListener("input", generateReadme);
 const readmeResult = document.getElementById('readmeResult');
 
 const inputButtonTitle = document.getElementById('includeTitle');

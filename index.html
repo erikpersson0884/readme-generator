@@ -17,11 +17,11 @@
 <body>
     <div class="main">
         <div class="left">
-            <h2>README.md Generator</h2>
+            <h2>README Generator</h2>
 
-            <div>
+            <div class="githubLinkInputDiv">
                 <label class="hidden" for="githubLink">GitHub Repository Link:</label>
-                <input type="text" id="githubLink" placeholder="Enter GitHub link...">
+                <input type="text" id="githubLinkInput" class="noInputFormatting" placeholder="Enter GitHub link...">
             </div>
 
 
@@ -67,7 +67,7 @@
         <div class="right">
             <textarea id="readmeResult" readonly></textarea>
             <div class="buttonsDiv">
-                <button id="clearButton" class="noButtonFormatting">Generate README.md</button>
+                <button id="clearButton" class="noButtonFormatting">Clear Text</button>
                 <button id="copyButton" class="noButtonFormatting" onclick="copyToClipboard()">Copy to Clipboard</button>
             </div>
         </div>
