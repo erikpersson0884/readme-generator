@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>README.md Generator</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
     <meta charset="UTF-8">
     <meta name="description" content="A webpage to create README.md files for github">
@@ -9,10 +10,14 @@
     <meta name="author" content="Erik Persson">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css"></link>
-    <link rel="stylesheet" href="css/footer.css"></link>
+    <link rel="stylesheet" href="css/style.css" defer></link>
+    <link rel="stylesheet" href="css/footer.css" defer></link>
 
     <script src="js/app.js" defer></script>
+    <link rel="manifest" href="manifest.json" />
+
+
+
 </head>
 <body>
     <div class="main">
@@ -65,6 +70,7 @@
         </div>
 
         <div class="right">
+            <label for="readmeResult" class="hidden">Output README Content</label>
             <textarea id="readmeResult" readonly></textarea>
             <div class="buttonsDiv">
                 <button id="clearButton" class="noButtonFormatting">Clear Text</button>

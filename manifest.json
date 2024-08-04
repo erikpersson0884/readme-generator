@@ -1,0 +1,10 @@
+{
+    "name": "README Generator",
+    "version": "1.1.0",
+    "description": "A web aplication that generates README.md files for your projects.",
+    "author": "Erik Persson",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000"
+}
