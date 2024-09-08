@@ -81,12 +81,8 @@ ${inputButtonDescription.checked && inputButtonTitle.checked ? `## ${repoName} i
 
 ${inputButtonVersion.checked ? `![Github version](https://img.shields.io/badge/version-0.0.0-darkblue?style=flat-square)` : ''}
 ${inputButtonRepoSize.checked ? `![GitHub repo size](https://img.shields.io/github/repo-size/${username}/${repoName}?color=blue&style=flat-square)` : ''}
-${inputButtonLastCommit.checked ? `![GitHub last commit](https://img.shields.io/github/last-commit/${username}/${repoName}?color=darkgreen&style=flat-square)` : ''}
-
-
-${inputButtonAuthor.checked ? `
-<a style="text-decoration: none;" href="https://github.com/${username}">![Github author](https://img.shields.io/badge/Author-${username}-darkred?style=flat-square)</a>` : ''}
-
+${inputButtonLastCommit.checked ? `![GitHub last commit](https://img.shields.io/github/last-commit/${username}/${repoName}?color=darkgreen&style=flat-square)` : ''} ${inputButtonAuthor.checked ? `
+<a style="text-decoration: none !important; display:inline;" href="https://github.com/${username}">![Github author](https://img.shields.io/badge/Author-${username}-darkred?style=flat-square)</a>` : ''}
 ${inputButtonLicense.checked ? `<a href="${selectedLicense.url}"> ![License](https://img.shields.io/badge/license-CC%20${selectedLicense.name}-lightgrey?style=flat-square)</a>
 
 ### License:
