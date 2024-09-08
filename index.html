@@ -55,7 +55,12 @@
                     <input type="checkbox" id="includeLastCommit">
                     <label for="includeLastCommit">Include Last Commit</label>
                 </li>
-    
+
+                <li>
+                    <input type="checkbox" id="includeAuthor">
+                    <label for="includeAuthor">Include Author</label>
+                </li>
+
                 <li>
                     <input type="checkbox" id="includeLicense">
                     <label for="includeLicense">Include License</label>
@@ -70,7 +75,6 @@
         </div>
 
         <div class="right">
-            <label for="readmeResult" class="hidden">Output README Content</label>
             <textarea id="readmeResult" readonly></textarea>
             <div class="buttonsDiv">
                 <button id="clearButton" class="noButtonFormatting">Clear Text</button>
@@ -82,7 +86,8 @@
 
 
 
-</body>    <footer>
+</body>    
+    <footer>
         <p>Created by <a href="https://github.com/erikpersson0884">Erik Persson</a></p>
     </footer>
 </html>
